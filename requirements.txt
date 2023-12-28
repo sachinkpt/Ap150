@@ -1,3 +1,5 @@
 pyrogram
 TgCrypto
 pymongo[srv]
+flask
+flask_restful 
