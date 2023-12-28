@@ -4,7 +4,7 @@ services:
         name: Auto-Approve
         env: python3
         buildCommand: pip install -U -r requirements.txt
-        startCommand: python3 bot.py
+        startCommand: python3 server.py & bash start
         repo: https://github.com/illuminati-Dev/Auto-Approve   
         branch: main
         envVars:
