@@ -15,7 +15,7 @@
   
 <details><summary>📌 Deploy to Okteto </summary>
   
-[![Deploy on Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com/deploy?repository=https://github.com/ImDenuwan/Auto-Approve-Bot/)
+[![Deploy on Okteto](https://cloud.okteto.com/deploy?repository=https://github.com/illuminati-Dev/Auto-Approve)
 </details>
 
 <details><summary>📌 Deploy to VPS/Local </summary>
