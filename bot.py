@@ -50,8 +50,8 @@ async def op(_, m :Message):
                         InlineKeyboardButton("Channel", url="https://t.me/KPT_Movies"),
                         InlineKeyboardButton("Owner ", url="https://t.me/Kpt_help_bot")
                     ],[
-                        InlineKeyboardButton("Add to Group", url="https://t.me/AutoRequest_xBot?startgroup"),
-                        InlineKeyboardButton("Add to Channel", url="https://t.me/AutoRequest_xBot?startchannel")
+                        InlineKeyboardButton("Add me to Your Group", url="https://t.me/AutoRequest_xBot?startgroup"),
+                        InlineKeyboardButton("Add me to Your Channel", url="https://t.me/AutoRequest_xBot?startchannel")
                     ]
                 ]
             )
@@ -93,8 +93,8 @@ async def chk(_, cb : CallbackQuery):
                         InlineKeyboardButton("Channel", url="https://t.me/KPT_Movies"),
                         InlineKeyboardButton("Owner ", url="https://t.me/KPT_Help_bot")
                     ],[
-                        InlineKeyboardButton("Add me to Group", url="https://t.me/AutoRequest_xBot?startgroup"),
-                        InlineKeyboardButton("Add me to Channel", url="https://t.me/AutoRequest_xBot?startchannel")
+                        InlineKeyboardButton("Add me to Your Group", url="https://t.me/AutoRequest_xBot?startgroup"),
+                        InlineKeyboardButton("Add me to Your Channel", url="https://t.me/AutoRequest_xBot?startchannel")
                     ]
                 ]
             )
