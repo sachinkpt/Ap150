@@ -50,8 +50,8 @@ async def op(_, m :Message):
                         InlineKeyboardButton("Channel", url="https://t.me/KPT_Movies"),
                         InlineKeyboardButton("Owner ", url="https://t.me/Kpt_help_bot")
                     ],[
-                        InlineKeyboardButton("Add me to Your Group", url="https://t.me/AutoRequest_xBot?startgroup"),
-                        InlineKeyboardButton("Add me to Your Channel", url="https://t.me/AutoRequest_xBot?startchannel")
+                        InlineKeyboardButton("Add me to Your Group", url="https://t.me/Auto_Join_Request_Approve_Robot?startgroup"),
+                        InlineKeyboardButton("Add me to Your Channel", url="https://t.me/Auto_Join_Request_Approve_Robot?startchannel")
                     ]
                 ]
             )
@@ -62,7 +62,7 @@ async def op(_, m :Message):
             keyboar = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://t.me/AutoRequest_xBot?start=start")
+                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://t.me/Auto_Join_Request_Approve_Robot?start=start")
                     ]
                 ]
             )
@@ -93,8 +93,8 @@ async def chk(_, cb : CallbackQuery):
                         InlineKeyboardButton("Channel", url="https://t.me/KPT_Movies"),
                         InlineKeyboardButton("Owner ", url="https://t.me/KPT_Help_bot")
                     ],[
-                        InlineKeyboardButton("Add me to Your Group", url="https://t.me/AutoRequest_xBot?startgroup"),
-                        InlineKeyboardButton("Add me to Your Channel", url="https://t.me/AutoRequest_xBot?startchannel")
+                        InlineKeyboardButton("Add me to Your Group", url="https://t.me/Auto_Join_Request_Approve_Robot?startgroup"),
+                        InlineKeyboardButton("Add me to Your Channel", url="https://t.me/Auto_Join_Request_Approve_Robot?startchannel")
                     ]
                 ]
             )
