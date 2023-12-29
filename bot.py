@@ -56,7 +56,7 @@ async def op(_, m :Message):
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_text("**Iam an Auto Join Request Approve Bot.🤖 Just Add me and Make me Admin with Add Permission.**", reply_markup=keyboard)
+            await m.reply_text("**Iam an Auto Join Request Approve Bot.🤖 Just Add me and Make me Admin with Add Permission.\nMain Channel:- @KPT_Movies**", reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
@@ -99,7 +99,7 @@ async def chk(_, cb : CallbackQuery):
                 ]
             )
             add_user(cb.from_user.id)
-            await cb.message.edit("**Iam an Auto Join Request Approve Bot.🤖 Just Add me in Your Channel & Group and Make me Admin with Add Permission.**", reply_markup=keyboard, disable_web_page_preview=True)
+            await cb.message.edit("**Iam an Auto Join Request Approve Bot.🤖 Just Add me in Your Channel & Group and Make me Admin with Add Permission.\nMain Channel:- @KPT_Movies**", reply_markup=keyboard, disable_web_page_preview=True)
         print(cb.from_user.first_name +" Is started Your Bot!")
     except UserNotParticipant:
         await cb.answer("🙅‍♂️ You are not joined to channel join and try again. 🙅‍♂️")
