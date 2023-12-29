@@ -47,10 +47,11 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/KPT_Movies"),
-                        InlineKeyboardButton("💬 Owner ", url="https://t.me/Kpt_help_bot")
+                        InlineKeyboardButton("Channel", url="https://t.me/KPT_Movies"),
+                        InlineKeyboardButton("Owner ", url="https://t.me/Kpt_help_bot")
                     ],[
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/AutoRequest_xBot?startgroup")
+                        InlineKeyboardButton("Add to Group", url="https://t.me/AutoRequest_xBot?startgroup"),
+                        InlineKeyboardButton("Add to Channel", url="https://t.me/AutoRequest_xBot?startchannel")
                     ]
                 ]
             )
