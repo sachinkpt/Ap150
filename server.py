@@ -2,12 +2,12 @@ import os
 from flask import Flask
 from flask_restful import Resource, Api
 
-app = Flask(name)
+app = Flask(__name__)
 api = Api(app)
 
-class Greeting (Resource):
+class Greeting(Resource):
     def get(self):
-        return "Auto-Approve is running !"
+        return "Auto-Approve is running!"
 
 api.add_resource(Greeting, '/')
 app.run(host="52.41.36.82", port=os.environ.get("PORT", 8080))
