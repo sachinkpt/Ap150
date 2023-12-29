@@ -10,4 +10,4 @@ class Greeting (Resource):
         return "Auto-Approve is running !"
 
 api.add_resource(Greeting, '/')
-app.run(host="0.0.0.0", port=os.environ.get("PORT", 8080))
+app.run(host="52.41.36.82", port=os.environ.get("PORT", 8080))
