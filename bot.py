@@ -30,7 +30,7 @@ async def approve(_, m : Message):
         add_group(m.chat.id)
         await app.approve_chat_join_request(op.id, kk.id)
         img = random.choice(gif)
-        await app.send_message(kk.id,"**Congratulations, Your Request to join <b>{}</b> was Approved.\n\nMain Channel:- @KPT_Movies**".format(m.chat.title))
+        await app.send_message(kk.id,"**Congratulations, Your Request to join <b>{}</b> was Approved.🎉\n\nMain Channel:- @KPT_Movies**".format(m.chat.title))
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
         print("user isn't start bot(means group)")
@@ -56,7 +56,7 @@ async def op(_, m :Message):
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_text("**Iam an Auto Join Request Approve Bot. Just Add me and Make Admin**", reply_markup=keyboard)
+            await m.reply_text("**Iam an Auto Join Request Approve Bot.🤖 Just Add me and Make me Admin with Add Permission.**", reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
@@ -67,7 +67,7 @@ async def op(_, m :Message):
                 ]
             )
             add_group(m.chat.id)
-            await m.reply_text("**🦊 Hello {}!\nwrite me private for more details**".format(m.from_user.first_name), reply_markup=keyboar)
+            await m.reply_text("**Hello !\nwrite me private for more details**", reply_markup=keyboar)
         print(m.from_user.first_name +" Is started Your Bot!")
 
     except UserNotParticipant:
@@ -90,15 +90,16 @@ async def chk(_, cb : CallbackQuery):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/illuminatiXNetwork"),
-                        InlineKeyboardButton("💬 Owner ", url="https://t.me/BIackHatDev")
+                        InlineKeyboardButton("Channel", url="https://t.me/KPT_Movies"),
+                        InlineKeyboardButton("Owner ", url="https://t.me/KPT_Help_bot")
                     ],[
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/AutoRequest_xBot?startgroup")
+                        InlineKeyboardButton("Add me to Group", url="https://t.me/AutoRequest_xBot?startgroup"),
+                        InlineKeyboardButton("Add me to Channel", url="https://t.me/AutoRequest_xBot?startchannel")
                     ]
                 ]
             )
             add_user(cb.from_user.id)
-            await cb.message.edit("**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powerd By : @illuminatiXNetwork__**".format(cb.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard, disable_web_page_preview=True)
+            await cb.message.edit("**Iam an Auto Join Request Approve Bot.🤖 Just Add me in Your Channel & Group and Make me Admin with Add Permission.**", reply_markup=keyboard, disable_web_page_preview=True)
         print(cb.from_user.first_name +" Is started Your Bot!")
     except UserNotParticipant:
         await cb.answer("🙅‍♂️ You are not joined to channel join and try again. 🙅‍♂️")
