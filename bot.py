@@ -56,7 +56,7 @@ async def op(_, m :Message):
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("**Iam an Auto Join Request Approve Bot. Just Add me and Make Admin**", reply_markup=keyboard)
+            await m.reply_message("**Iam an Auto Join Request Approve Bot. Just Add me and Make Admin**", reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
